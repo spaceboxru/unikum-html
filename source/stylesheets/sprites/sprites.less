@@ -1,0 +1,359 @@
+/*
+LESS variables are information about icon's compiled state, stored under its original file name
+
+.icon-home {
+  width: @icon-home-width;
+}
+
+The large array-like variables contain all information about a single icon
+@icon-home: x y offset_x offset_y width height total_width total_height image_path name;
+
+At the bottom of this section, we provide information about the spritesheet itself
+@spritesheet: width height image @spritesheet-sprites;
+*/
+@arrow-left-hover-name: arrow-left-hover;
+@arrow-left-hover-x: 36px;
+@arrow-left-hover-y: 140px;
+@arrow-left-hover-offset-x: -36px;
+@arrow-left-hover-offset-y: -140px;
+@arrow-left-hover-width: 8px;
+@arrow-left-hover-height: 19px;
+@arrow-left-hover-total-width: 182px;
+@arrow-left-hover-total-height: 177px;
+@arrow-left-hover-image: '../images/sprites/sprite.png';
+@arrow-left-hover: 36px 140px -36px -140px 8px 19px 182px 177px '../images/sprites/sprite.png' arrow-left-hover;
+@arrow-left-name: arrow-left;
+@arrow-left-x: 18px;
+@arrow-left-y: 140px;
+@arrow-left-offset-x: -18px;
+@arrow-left-offset-y: -140px;
+@arrow-left-width: 8px;
+@arrow-left-height: 19px;
+@arrow-left-total-width: 182px;
+@arrow-left-total-height: 177px;
+@arrow-left-image: '../images/sprites/sprite.png';
+@arrow-left: 18px 140px -18px -140px 8px 19px 182px 177px '../images/sprites/sprite.png' arrow-left;
+@arrow-right-hover-name: arrow-right-hover;
+@arrow-right-hover-x: 54px;
+@arrow-right-hover-y: 140px;
+@arrow-right-hover-offset-x: -54px;
+@arrow-right-hover-offset-y: -140px;
+@arrow-right-hover-width: 8px;
+@arrow-right-hover-height: 19px;
+@arrow-right-hover-total-width: 182px;
+@arrow-right-hover-total-height: 177px;
+@arrow-right-hover-image: '../images/sprites/sprite.png';
+@arrow-right-hover: 54px 140px -54px -140px 8px 19px 182px 177px '../images/sprites/sprite.png' arrow-right-hover;
+@arrow-right-name: arrow-right;
+@arrow-right-x: 0px;
+@arrow-right-y: 140px;
+@arrow-right-offset-x: 0px;
+@arrow-right-offset-y: -140px;
+@arrow-right-width: 8px;
+@arrow-right-height: 19px;
+@arrow-right-total-width: 182px;
+@arrow-right-total-height: 177px;
+@arrow-right-image: '../images/sprites/sprite.png';
+@arrow-right: 0px 140px 0px -140px 8px 19px 182px 177px '../images/sprites/sprite.png' arrow-right;
+@back-hover-name: back-hover;
+@back-hover-x: 54px;
+@back-hover-y: 169px;
+@back-hover-offset-x: -54px;
+@back-hover-offset-y: -169px;
+@back-hover-width: 17px;
+@back-hover-height: 8px;
+@back-hover-total-width: 182px;
+@back-hover-total-height: 177px;
+@back-hover-image: '../images/sprites/sprite.png';
+@back-hover: 54px 169px -54px -169px 17px 8px 182px 177px '../images/sprites/sprite.png' back-hover;
+@back-name: back;
+@back-x: 27px;
+@back-y: 169px;
+@back-offset-x: -27px;
+@back-offset-y: -169px;
+@back-width: 17px;
+@back-height: 8px;
+@back-total-width: 182px;
+@back-total-height: 177px;
+@back-image: '../images/sprites/sprite.png';
+@back: 27px 169px -27px -169px 17px 8px 182px 177px '../images/sprites/sprite.png' back;
+@doc-name: doc;
+@doc-x: 128px;
+@doc-y: 0px;
+@doc-offset-x: -128px;
+@doc-offset-y: 0px;
+@doc-width: 54px;
+@doc-height: 60px;
+@doc-total-width: 182px;
+@doc-total-height: 177px;
+@doc-image: '../images/sprites/sprite.png';
+@doc: 128px 0px -128px 0px 54px 60px 182px 177px '../images/sprites/sprite.png' doc;
+@facebook-hover-name: facebook-hover;
+@facebook-hover-x: 35px;
+@facebook-hover-y: 70px;
+@facebook-hover-offset-x: -35px;
+@facebook-hover-offset-y: -70px;
+@facebook-hover-width: 25px;
+@facebook-hover-height: 25px;
+@facebook-hover-total-width: 182px;
+@facebook-hover-total-height: 177px;
+@facebook-hover-image: '../images/sprites/sprite.png';
+@facebook-hover: 35px 70px -35px -70px 25px 25px 182px 177px '../images/sprites/sprite.png' facebook-hover;
+@facebook-name: facebook;
+@facebook-x: 70px;
+@facebook-y: 70px;
+@facebook-offset-x: -70px;
+@facebook-offset-y: -70px;
+@facebook-width: 25px;
+@facebook-height: 25px;
+@facebook-total-width: 182px;
+@facebook-total-height: 177px;
+@facebook-image: '../images/sprites/sprite.png';
+@facebook: 70px 70px -70px -70px 25px 25px 182px 177px '../images/sprites/sprite.png' facebook;
+@house-name: house;
+@house-x: 105px;
+@house-y: 105px;
+@house-offset-x: -105px;
+@house-offset-y: -105px;
+@house-width: 18px;
+@house-height: 18px;
+@house-total-width: 182px;
+@house-total-height: 177px;
+@house-image: '../images/sprites/sprite.png';
+@house: 105px 105px -105px -105px 18px 18px 182px 177px '../images/sprites/sprite.png' house;
+@instagram-hover-name: instagram-hover;
+@instagram-hover-x: 140px;
+@instagram-hover-y: 70px;
+@instagram-hover-offset-x: -140px;
+@instagram-hover-offset-y: -70px;
+@instagram-hover-width: 25px;
+@instagram-hover-height: 25px;
+@instagram-hover-total-width: 182px;
+@instagram-hover-total-height: 177px;
+@instagram-hover-image: '../images/sprites/sprite.png';
+@instagram-hover: 140px 70px -140px -70px 25px 25px 182px 177px '../images/sprites/sprite.png' instagram-hover;
+@instagram-name: instagram;
+@instagram-x: 0px;
+@instagram-y: 105px;
+@instagram-offset-x: 0px;
+@instagram-offset-y: -105px;
+@instagram-width: 25px;
+@instagram-height: 25px;
+@instagram-total-width: 182px;
+@instagram-total-height: 177px;
+@instagram-image: '../images/sprites/sprite.png';
+@instagram: 0px 105px 0px -105px 25px 25px 182px 177px '../images/sprites/sprite.png' instagram;
+@paging-arrow-left-hover-name: paging-arrow-left-hover;
+@paging-arrow-left-hover-x: 0px;
+@paging-arrow-left-hover-y: 169px;
+@paging-arrow-left-hover-offset-x: 0px;
+@paging-arrow-left-hover-offset-y: -169px;
+@paging-arrow-left-hover-width: 17px;
+@paging-arrow-left-hover-height: 8px;
+@paging-arrow-left-hover-total-width: 182px;
+@paging-arrow-left-hover-total-height: 177px;
+@paging-arrow-left-hover-image: '../images/sprites/sprite.png';
+@paging-arrow-left-hover: 0px 169px 0px -169px 17px 8px 182px 177px '../images/sprites/sprite.png' paging-arrow-left-hover;
+@paging-arrow-left-unactive-name: paging-arrow-left-unactive;
+@paging-arrow-left-unactive-x: 81px;
+@paging-arrow-left-unactive-y: 169px;
+@paging-arrow-left-unactive-offset-x: -81px;
+@paging-arrow-left-unactive-offset-y: -169px;
+@paging-arrow-left-unactive-width: 17px;
+@paging-arrow-left-unactive-height: 8px;
+@paging-arrow-left-unactive-total-width: 182px;
+@paging-arrow-left-unactive-total-height: 177px;
+@paging-arrow-left-unactive-image: '../images/sprites/sprite.png';
+@paging-arrow-left-unactive: 81px 169px -81px -169px 17px 8px 182px 177px '../images/sprites/sprite.png' paging-arrow-left-unactive;
+@paging-arrow-left-name: paging-arrow-left;
+@paging-arrow-left-x: 153px;
+@paging-arrow-left-y: 140px;
+@paging-arrow-left-offset-x: -153px;
+@paging-arrow-left-offset-y: -140px;
+@paging-arrow-left-width: 17px;
+@paging-arrow-left-height: 8px;
+@paging-arrow-left-total-width: 182px;
+@paging-arrow-left-total-height: 177px;
+@paging-arrow-left-image: '../images/sprites/sprite.png';
+@paging-arrow-left: 153px 140px -153px -140px 17px 8px 182px 177px '../images/sprites/sprite.png' paging-arrow-left;
+@paging-arrow-right-hover-name: paging-arrow-right-hover;
+@paging-arrow-right-hover-x: 72px;
+@paging-arrow-right-hover-y: 140px;
+@paging-arrow-right-hover-offset-x: -72px;
+@paging-arrow-right-hover-offset-y: -140px;
+@paging-arrow-right-hover-width: 17px;
+@paging-arrow-right-hover-height: 8px;
+@paging-arrow-right-hover-total-width: 182px;
+@paging-arrow-right-hover-total-height: 177px;
+@paging-arrow-right-hover-image: '../images/sprites/sprite.png';
+@paging-arrow-right-hover: 72px 140px -72px -140px 17px 8px 182px 177px '../images/sprites/sprite.png' paging-arrow-right-hover;
+@paging-arrow-right-unactive-name: paging-arrow-right-unactive;
+@paging-arrow-right-unactive-x: 133px;
+@paging-arrow-right-unactive-y: 105px;
+@paging-arrow-right-unactive-offset-x: -133px;
+@paging-arrow-right-unactive-offset-y: -105px;
+@paging-arrow-right-unactive-width: 17px;
+@paging-arrow-right-unactive-height: 8px;
+@paging-arrow-right-unactive-total-width: 182px;
+@paging-arrow-right-unactive-total-height: 177px;
+@paging-arrow-right-unactive-image: '../images/sprites/sprite.png';
+@paging-arrow-right-unactive: 133px 105px -133px -105px 17px 8px 182px 177px '../images/sprites/sprite.png' paging-arrow-right-unactive;
+@paging-arrow-right-name: paging-arrow-right;
+@paging-arrow-right-x: 160px;
+@paging-arrow-right-y: 105px;
+@paging-arrow-right-offset-x: -160px;
+@paging-arrow-right-offset-y: -105px;
+@paging-arrow-right-width: 17px;
+@paging-arrow-right-height: 8px;
+@paging-arrow-right-total-width: 182px;
+@paging-arrow-right-total-height: 177px;
+@paging-arrow-right-image: '../images/sprites/sprite.png';
+@paging-arrow-right: 160px 105px -160px -105px 17px 8px 182px 177px '../images/sprites/sprite.png' paging-arrow-right;
+@pdf-name: pdf;
+@pdf-x: 64px;
+@pdf-y: 0px;
+@pdf-offset-x: -64px;
+@pdf-offset-y: 0px;
+@pdf-width: 54px;
+@pdf-height: 60px;
+@pdf-total-width: 182px;
+@pdf-total-height: 177px;
+@pdf-image: '../images/sprites/sprite.png';
+@pdf: 64px 0px -64px 0px 54px 60px 182px 177px '../images/sprites/sprite.png' pdf;
+@readmore-hover-name: readmore-hover;
+@readmore-hover-x: 99px;
+@readmore-hover-y: 140px;
+@readmore-hover-offset-x: -99px;
+@readmore-hover-offset-y: -140px;
+@readmore-hover-width: 17px;
+@readmore-hover-height: 8px;
+@readmore-hover-total-width: 182px;
+@readmore-hover-total-height: 177px;
+@readmore-hover-image: '../images/sprites/sprite.png';
+@readmore-hover: 99px 140px -99px -140px 17px 8px 182px 177px '../images/sprites/sprite.png' readmore-hover;
+@readmore-name: readmore;
+@readmore-x: 126px;
+@readmore-y: 140px;
+@readmore-offset-x: -126px;
+@readmore-offset-y: -140px;
+@readmore-width: 17px;
+@readmore-height: 8px;
+@readmore-total-width: 182px;
+@readmore-total-height: 177px;
+@readmore-image: '../images/sprites/sprite.png';
+@readmore: 126px 140px -126px -140px 17px 8px 182px 177px '../images/sprites/sprite.png' readmore;
+@twitter-hover-name: twitter-hover;
+@twitter-hover-x: 70px;
+@twitter-hover-y: 105px;
+@twitter-hover-offset-x: -70px;
+@twitter-hover-offset-y: -105px;
+@twitter-hover-width: 25px;
+@twitter-hover-height: 25px;
+@twitter-hover-total-width: 182px;
+@twitter-hover-total-height: 177px;
+@twitter-hover-image: '../images/sprites/sprite.png';
+@twitter-hover: 70px 105px -70px -105px 25px 25px 182px 177px '../images/sprites/sprite.png' twitter-hover;
+@twitter-name: twitter;
+@twitter-x: 35px;
+@twitter-y: 105px;
+@twitter-offset-x: -35px;
+@twitter-offset-y: -105px;
+@twitter-width: 25px;
+@twitter-height: 25px;
+@twitter-total-width: 182px;
+@twitter-total-height: 177px;
+@twitter-image: '../images/sprites/sprite.png';
+@twitter: 35px 105px -35px -105px 25px 25px 182px 177px '../images/sprites/sprite.png' twitter;
+@vkontakte-hover-name: vkontakte-hover;
+@vkontakte-hover-x: 0px;
+@vkontakte-hover-y: 70px;
+@vkontakte-hover-offset-x: 0px;
+@vkontakte-hover-offset-y: -70px;
+@vkontakte-hover-width: 25px;
+@vkontakte-hover-height: 25px;
+@vkontakte-hover-total-width: 182px;
+@vkontakte-hover-total-height: 177px;
+@vkontakte-hover-image: '../images/sprites/sprite.png';
+@vkontakte-hover: 0px 70px 0px -70px 25px 25px 182px 177px '../images/sprites/sprite.png' vkontakte-hover;
+@vkontakte-name: vkontakte;
+@vkontakte-x: 105px;
+@vkontakte-y: 70px;
+@vkontakte-offset-x: -105px;
+@vkontakte-offset-y: -70px;
+@vkontakte-width: 25px;
+@vkontakte-height: 25px;
+@vkontakte-total-width: 182px;
+@vkontakte-total-height: 177px;
+@vkontakte-image: '../images/sprites/sprite.png';
+@vkontakte: 105px 70px -105px -70px 25px 25px 182px 177px '../images/sprites/sprite.png' vkontakte;
+@xls-name: xls;
+@xls-x: 0px;
+@xls-y: 0px;
+@xls-offset-x: 0px;
+@xls-offset-y: 0px;
+@xls-width: 54px;
+@xls-height: 60px;
+@xls-total-width: 182px;
+@xls-total-height: 177px;
+@xls-image: '../images/sprites/sprite.png';
+@xls: 0px 0px 0px 0px 54px 60px 182px 177px '../images/sprites/sprite.png' xls;
+@spritesheet-width: 182px;
+@spritesheet-height: 177px;
+@spritesheet-image: '../images/sprites/sprite.png';
+@spritesheet-sprites: @arrow-left-hover @arrow-left @arrow-right-hover @arrow-right @back-hover @back @doc @facebook-hover @facebook @house @instagram-hover @instagram @paging-arrow-left-hover @paging-arrow-left-unactive @paging-arrow-left @paging-arrow-right-hover @paging-arrow-right-unactive @paging-arrow-right @pdf @readmore-hover @readmore @twitter-hover @twitter @vkontakte-hover @vkontakte @xls;
+@spritesheet: 182px 177px '../images/sprites/sprite.png' @spritesheet-sprites;
+
+/*
+The provided classes are intended to be used with the array-like variables
+
+.icon-home {
+  .sprite-width(@icon-home);
+}
+.icon-email {
+  .sprite(@icon-email);
+}
+*/
+.sprite-width(@sprite) {
+  width: extract(@sprite, 5);
+}
+
+.sprite-height(@sprite) {
+  height: extract(@sprite, 6);
+}
+
+.sprite-position(@sprite) {
+  @sprite-offset-x: extract(@sprite, 3);
+  @sprite-offset-y: extract(@sprite, 4);
+  background-position: @sprite-offset-x @sprite-offset-y;
+}
+
+.sprite-image(@sprite) {
+  @sprite-image: extract(@sprite, 9);
+  @sprite-image-bare: ~`"@{sprite-image}".slice(1, -1)`;
+  background-image: url(@sprite-image-bare);
+}
+
+.sprite(@sprite) {
+  .sprite-image(@sprite);
+  .sprite-position(@sprite);
+  .sprite-width(@sprite);
+  .sprite-height(@sprite);
+}
+
+/*
+The `.sprites` mixin generates identical output to the CSS template
+  but can be overridden inside of LESS
+
+This must be run when you have at least 2 sprites.
+  If run with a single sprite, then there will be reference errors.
+
+.sprites(@spritesheet-sprites);
+*/
+.sprites(@sprites, @i: 1) when (@i <= length(@sprites)) {
+  @sprite: extract(@sprites, @i);
+  @sprite-name: extract(@sprite, 10);
+  .@{sprite-name} {
+    .sprite(@sprite);
+  }
+  .sprites(@sprites, @i + 1);
+}

@@ -1,0 +1,62 @@
+@iterations: 100;
+
+.loopingClas (@i) when (@i >= 0) {
+	.p-l-@{i} {
+		padding-left:@i*1px!important;
+	}
+	.p-t-@{i} {
+		padding-top:@i*1px!important;
+	}
+	.p-r-@{i} {
+		padding-right:@i*1px!important;
+	}
+	.p-b-@{i} {
+		padding-bottom:@i*1px!important;
+	}
+	.m-l-@{i} {
+		margin-left:@i*1px!important;
+	}
+	.m-t-@{i} {
+		margin-top:@i*1px!important;
+	}
+	.m-r-@{i} {
+		margin-right:@i*1px!important;
+	}
+	.m-b-@{i} {
+		margin-bottom:@i*1px!important;
+	}
+	.loopingClas(@i - 5);
+}
+.loopingClas(@iterations);
+
+.relative {
+	position: relative!important;
+}
+.absolute {
+	position: absolute!important;
+}
+.display-block {
+	display: block!important;
+}
+.display-inline-block {
+	display: inline-block!important;
+}
+* {
+	transition: color 0.4s, opacity 0.6s;
+}
+
+*,
+input,
+select,
+textarea,
+a,button,
+a:hover,button:hover,
+a:focus,button:focus,
+a:active,button:active,
+a:active:focus,button:active:focus {
+	&:focus,
+	&:focus:active,
+	&:active:focus {
+		outline: none;
+	}
+}

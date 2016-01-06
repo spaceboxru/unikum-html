@@ -1,0 +1,117 @@
+
+.icons {
+	display: inline-block;
+	vertical-align: middle;
+	position: relative;
+	
+	&:after {
+		content: "";
+		display: inline-block;
+		vertical-align: middle;
+		position: relative;
+		z-index: 100;
+	}
+	
+	&--house {
+		&:after {
+			.sprite(@house);
+		}
+	}
+	
+	&--facebook {
+		&:after {
+			.sprite(@facebook);
+		}
+		&:hover:after {
+			.sprite(@facebook-hover);
+		}
+	}
+	
+	&--instagram {
+		&:after {
+			.sprite(@instagram);
+		}
+		&:hover:after {
+			.sprite(@instagram-hover);
+		}
+	}
+
+	&--twitter {
+		&:after {
+			.sprite(@twitter);
+		}
+		&:hover:after {
+			.sprite(@twitter-hover);
+		}
+	}
+
+	&--vkontakte {
+		&:after {
+			.sprite(@vkontakte);
+		}
+		&:hover:after {
+			.sprite(@vkontakte-hover);
+		}
+	}
+
+	&--arrow-left {
+		&:after {
+			.sprite(@arrow-left);
+		}
+		&:hover:after {
+			.sprite(@arrow-left-hover);
+		}
+	}
+
+	&--arrow-right {
+		&:after {
+			.sprite(@arrow-right);
+		}
+		&:hover:after {
+			.sprite(@arrow-right-hover);
+		}
+	}
+	
+	&--readmore {
+		&:after {
+			.sprite(@readmore);
+		}
+		&:hover:after {
+			.sprite(@readmore-hover);
+		}
+	}
+	
+	&--back {
+		&:after {
+			.sprite(@back);
+		}
+		&:hover:after {
+			.sprite(@back-hover);
+		}
+	}
+	
+	&--paging-arrow-left {
+		&:after {
+			.sprite(@paging-arrow-left);
+		}
+		&:hover:after {
+			.sprite(@paging-arrow-left-hover);
+		}
+		&.unactive:after {
+			.sprite(@paging-arrow-left-unactive);
+		}
+	}
+	
+	&--paging-arrow-right {
+		&:after {
+			.sprite(@paging-arrow-right);
+		}
+		&:hover:after {
+			.sprite(@paging-arrow-right-hover);
+		}
+		&.unactive:after {
+			.sprite(@paging-arrow-right-unactive);
+		}
+	}
+	
+}
