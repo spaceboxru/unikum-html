@@ -1,1 +1,135 @@
 
+.topnav {
+	& &__item {
+		&:first-child {
+			width: 0.2%;
+			max-width: 40px;
+		}
+		&,
+		a {
+			&:hover,
+			&:focus {
+				background: transparent;
+			}
+		}
+		a {
+			padding: 0px;
+			font-size: 20px;
+			font-family: 'houschka_roundedmedium';
+			font-weight: 700;
+			white-space: nowrap;
+			line-height: 1.1;
+			&.orange,
+			&.marine,
+			&.green {
+				font-family: 'houschka_roundedextrabold';
+			}
+			&:not(.green):not(.marine):not(.orange) {
+				color: @base-dark-color;
+				&:hover {
+					color: @base-light-color;
+				}
+			}
+			.decorate {
+				display: inline-block;
+				line-height: 0.8;
+				border-bottom: 1px solid;
+			}
+			&:hover {
+				.decorate {
+					border-bottom: 0px none;
+				}
+			}
+		}
+		&.active {
+			a {
+				.decorate {
+					border-bottom: 0px none;
+				}
+			}
+		}
+	}
+	& &__home {
+		position: relative;
+		top: -2px;
+		display: inline-block;
+		.icons {
+			width: 40px;
+			height: 40px;
+			border-radius: 50%;
+			line-height: 34px;
+			&:first-child {
+				display: none;
+			}
+			&:last-child {
+				display: block;
+			}
+		}
+		&:hover,
+		&.active {
+			.icons {
+				background: #c9dde4;
+				text-align: center;
+				&:first-child {
+					display: block;
+				}
+				&:last-child {
+					display: none;
+				}
+			}
+		}
+	}
+}
+
+.leftnav {
+	position: relative;
+	padding: 45px 0px;
+	&:before {
+		content: "";
+		display: block;
+		position: absolute;
+		background: #eaf8fd;
+		top: 0px;
+		left: 0px;
+		bottom: 0px;
+		width: 150px;
+		left: -30px;
+		border-radius: 75px;
+	}
+	& &__item {
+		font-size: 15px;
+		font-family: "Trebuchet MS", Helvetica, sans-serif;
+		font-weight: 700;
+		line-height: 1.1;
+		margin-top: 23px;
+		&:first-child {
+			margin-top: 0px;
+		}
+		&,
+		& a {
+			&:hover,
+			&:focus {
+				background: transparent;
+			}
+		}
+		a {
+			padding: 0px 0px;
+			text-decoration: none;
+			&,
+			&:hover {
+				color: @base-dark-color;
+			}
+		}
+		&:hover,
+		&.active {
+			.decorate {
+				border-bottom: 0px none;
+			}
+		}
+		.decorate {
+			display: inline-block;
+			line-height: 1.1;
+			border-bottom: 1px solid;
+		}
+	}
+}

@@ -136,6 +136,8 @@ module.exports = function(grunt) {
 
 						,'bower_components/jquery-placeholder/jquery.placeholder.js'
 						
+						,'bower_components/bootstrap/dist/js/bootstrap.js'
+
 						//,'bower_components/bootstrap/js/tooltip.js'
 						//,'bower_components/bootstrap/js/modal.js'
 						,'bower_components/bootstrap/js/dropdown.js'
