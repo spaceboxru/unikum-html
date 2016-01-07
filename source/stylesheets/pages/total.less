@@ -60,3 +60,20 @@ a:active:focus,button:active:focus {
 		outline: none;
 	}
 }
+.readmore {
+	font-size: 15px!important;
+	color: @base-color!important;
+	font-weight: 700;
+	font-family: "Trebuchet MS", Helvetica, sans-serif;
+	text-decoration: none;
+	.decorate {
+		border-bottom: 1px solid #a1a1a1;
+		display: inline-block;
+		line-height: 1.0;
+	}
+	&:hover {
+		.decorate {
+			border-bottom: 0px none;
+		}
+	}
+}

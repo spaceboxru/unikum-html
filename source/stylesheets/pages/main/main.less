@@ -18,3 +18,57 @@
 		line-height: 1.18;
 	}
 }
+
+.dotblock {
+	background: transparent url(../images/dotted-bg.png) repeat 0% 0%;
+	padding: 47px 0px 52px;
+	&__img {
+		margin-left: -18px;
+		&,
+		& img {
+			display: block;
+		}
+	}
+	&__title {
+		font-family: 'houschka_roundedextrabold';
+		font-size: 24px;
+		line-height: 0.9;
+		min-height: 89px;
+		margin-bottom: 0px;
+		a {
+			&,
+			&:hover {
+				text-decoration: none;
+			}
+			.decorate {
+				display: inline-block;
+				border-bottom: 1px solid;
+				line-height: 0.75;
+				&:last-child {
+					margin-top: 10px;
+				}
+				&:first-child {
+					margin-top: 30px;
+				}
+			}
+		}
+	}
+	&__text {
+		font-family: 'intro_script_rh2_base';
+		font-size: 22px;
+	}
+	&__title,
+	&__text {
+		padding-left: 15px;
+	}
+}
+
+.index-special {
+	max-width: 260px;
+	width: 260px;
+	min-height: 390px;
+	border: 5px solid #d4dee7;
+	position: relative;
+	overflow: hidden;
+	display: block;
+}

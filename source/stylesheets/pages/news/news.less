@@ -1,0 +1,59 @@
+
+.news {
+	&__title {
+		font-size: 30px;
+		font-family: 'houschka_roundedextrabold';
+		line-height: 1.17;
+	}
+	&__item {
+		margin-bottom: 30px;
+		&:last-child {
+			margin-bottom: 0px;
+		}
+		&-img,
+		&-img img {
+			display: block;
+		}
+		&-img {
+			position: relative;
+			overflow: hidden;
+			border: 4px solid #d4dee7;
+			img {
+				min-width: 100%;
+				height: auto;
+			}
+		}
+		&-date,
+		&-title {
+			font-family: "Trebuchet MS", Helvetica, sans-serif;
+			padding-left: 23px;
+			display: inline-block;
+		}
+		&-date {
+			display: block;
+			font-size: 13px;
+			line-height: 1.0;
+			color: @gray-color;
+			margin-top: -2px;
+			margin-bottom: 12px;
+		}
+		&-title {
+			text-decoration: none;
+			font-size: 20px;
+			line-height: 1.50;
+			.decorate {
+				border-bottom: 1px solid #a1a1a1;
+			}
+			&:hover {
+				text-decoration: none;
+				.decorate {
+					border-bottom: 0px none;
+				}
+			}
+			&,
+			&:hover {
+				color: @base-dark-color;
+			}
+		}
+	}
+}
