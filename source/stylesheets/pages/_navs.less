@@ -133,3 +133,47 @@
 		}
 	}
 }
+
+.btmnav {
+	& &__item {
+		font-size: 16px;
+		font-family: "Trebuchet MS", Helvetica, sans-serif;
+		font-weight: 500;
+		line-height: 1.1;
+		margin-top: 23px;
+		&:first-child {
+			margin-top: 0px;
+		}
+		&,
+		& a {
+			&:hover,
+			&:focus {
+				background: transparent;
+			}
+		}
+		a {
+			padding: 0px 0px;
+			text-decoration: none;
+			&,
+			&:hover {
+				color: @base-dark-color;
+			}
+		}
+		&:hover,
+		&.active {
+			.decorate {
+				border-bottom-color: transparent;
+			}
+		}
+		.decorate {
+			display: inline-block;
+			line-height: 0.9;
+			border-bottom: 1px solid;
+		}
+	}
+	&--bold {
+		.btmnav__item {
+			font-weight: 700;
+		}
+	}
+}
