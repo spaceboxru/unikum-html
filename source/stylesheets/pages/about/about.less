@@ -1,0 +1,141 @@
+
+.about {
+	&,
+	& p {
+		line-height: 1.65;
+		color: @base-color;
+	}
+	br {
+		content: "";
+		display: block;
+		line-height: 1rem;
+		padding-bottom: 47px;
+	}
+	img {
+		border: 4px solid #d4dee7;
+		position: relative;
+		z-index: 1;
+		&.pull-right {
+			margin: 0px -35px 25px 25px;
+		}
+	}
+	&__title {
+		font-size: 30px;
+		font-family: 'houschka_roundedextrabold';
+		color: #333;
+		line-height: 1.1;
+		margin-bottom: 28px;
+	}
+	&__anons {
+		font-size: 20px;
+		font-family: 'houschka_roundeddemibold';
+		margin-bottom: 36px;
+		&,
+		& p {
+			line-height: 1.5;
+		}
+	}
+	&__num {
+		font-family: 'houschka_roundedextrabold';
+		font-size: 90px;
+		line-height: 1.42;
+		display: block;
+		&--green {
+			color: #73e500;
+			position: relative;
+			margin: 2px 0px -5px 2px;
+			opacity: 0.45;
+			z-index: 10;
+			text-shadow:
+				-1px -1px 0 #73e500,  
+				 1px -1px 0 #73e500,
+				-1px 1px 0 #73e500,
+				 1px 1px 0 #73e500;
+			&-frame {
+				position: absolute;
+				margin: -3px 0px 0px -3px;
+				color: white;
+				opacity: 1.0;
+				z-index: 1;
+				text-shadow:
+					-2px -2px 0 #55aa00,  
+					 2px -2px 0 #55aa00,
+					-2px 2px 0 #55aa00,
+					 2px 2px 0 #55aa00;
+			}
+		}
+		&--blue {
+			color: #00b7dc;
+			position: relative;
+			margin: 2px 0px -5px 2px;
+			opacity: 0.5;
+			z-index: 10;
+			text-shadow:
+				-1px -1px 0 #00b7dc,  
+				 1px -1px 0 #00b7dc,
+				-1px 1px 0 #00b7dc,
+				 1px 1px 0 #00b7dc;
+			&-frame {
+				position: absolute;
+				margin: -3px 0px 0px -3px;
+				color: white;
+				opacity: 1.0;
+				z-index: 1;
+				text-shadow:
+					-2px -2px 0 #00aacc,  
+					 2px -2px 0 #00aacc,
+					-2px 2px 0 #00aacc,
+					 2px 2px 0 #00aacc;
+			}
+		}
+	}
+	&__nums {
+		& ul {
+			padding-left: 18px;
+			font-size: 15px;
+			li {
+				list-style-type: none;
+				position: relative;
+				margin-top: 6px;
+				&:after {
+					content: "";
+					display: block;
+					position: absolute;
+					top: 1.0rem;
+					background: @base-light-color;
+					width: 4px;
+					height: 4px;
+					border-radius: 50%;
+					margin-left: -14px;
+				}
+			}
+		}
+		&-title {
+			font-size: 15px;
+			color: @base-light-color;
+			margin-bottom: 0px;
+		}
+		& ul li,
+		& p {
+			color: @base-light-color;
+		}
+	}
+	&__readmore {
+		background: #d4ffb5;
+		display: inline-block;
+		font-size: 15px;
+		color: #06c;
+		line-height: 1.1;
+		padding: 7px 10px 8px;
+		margin: 21px 0px 15px;
+		.decorate {
+			border-bottom: 1px dashed;
+		}
+		&:hover {
+			text-decoration: none;
+			.decorate {
+				border-bottom-color: transparent;
+			}
+		}
+	}
+}
