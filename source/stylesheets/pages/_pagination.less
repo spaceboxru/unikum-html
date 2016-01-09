@@ -1,0 +1,133 @@
+
+
+.pagination {
+	border-radius: 0px;
+	width: 100%;
+	display: block;
+	font-size: 20px;
+	font-family: 'houschka_roundedextrabold';
+	&--justify {
+		background: white;
+		width: auto;
+		margin: 45px -100px -45px -60px;
+		padding: 20px 60px 21px 60px;
+	}
+	&>li {
+		display: block;
+		text-align: center;
+		list-style-type: none;
+		&:first-child {
+			.icons {
+				margin-right: 17px;
+				margin-top: -2px;
+			}
+		}
+		&:last-child {
+			.icons {
+				margin-left: 17px;
+				margin-top: -2px;
+			}
+		}
+		&:first-child>a,
+		&:first-child>span,
+		&:last-child>a,
+		&:last-child>span,
+		&>a,
+		&>span {
+			border-radius: 0px;
+			padding: 0px;
+			border: 0px none;			
+		}
+		&>a,
+		&>span {
+			float: none;
+			display: inline-block;
+			&,
+			&:hover {
+				background: transparent;
+			}
+		}
+		&>span {
+			font-size: 18px;
+			line-height: 1.1;
+			&,
+			&:hover {
+				color: #bbb;
+			}
+		}
+		&>a {
+			color: #00aacc;
+			.decorate {
+				display: inline-block;
+				line-height: 1.1;
+				border-bottom: 1px solid;
+			}
+			&:hover {
+				.decorate {
+					border-bottom-color: transparent;
+				}
+			}
+		}
+		&.active>a {
+			.decorate {
+				border-bottom-color: transparent;
+			}
+		}
+		&.active>a,
+		&.active>a:hover,
+		&.active>a:focus,
+		&:hover>a,
+		&>a:hover,
+		&>a:focus {
+			background: transparent;
+			color: @orange-color;
+			border: 0px none;
+		}
+		&:first-child:hover>a,
+		&:first-child>a:hover,
+		&:first-child>a:focus {
+			.icons--paging-arrow-left {
+				&:after {
+					.sprite(@paging-arrow-left-hover);
+				}
+			}
+		}
+		&:last-child:hover>a,
+		&:last-child>a:hover,
+		&:last-child>a:focus {
+			.icons--paging-arrow-right {
+				&:after {
+					.sprite(@paging-arrow-right-hover);
+				}
+			}
+		}
+		&.unactive:first-child>a,
+		&.unactive:first-child>a:hover,
+		&.unactive:first-child>a:focus {
+			color: #abc;
+			.icons--paging-arrow-left {
+				&:after {
+					.sprite(@paging-arrow-left-unactive);
+				}
+			}			
+		}
+		&.unactive:last-child>a,
+		&.unactive:last-child>a:hover,
+		&.unactive:last-child>a:focus {
+			color: #abc;
+			.icons--paging-arrow-right {
+				&:after {
+					.sprite(@paging-arrow-right-unactive);
+				}
+			}
+		}
+		&:first-child {
+			text-align: left;
+		}
+		&:last-child {
+			text-align: right;
+		}
+	}
+
+}
+

@@ -56,4 +56,85 @@
 			}
 		}
 	}
+	&-list {
+		&__title {
+			font-family: 'houschka_roundedextrabold';
+			font-size: 40px;
+			margin-bottom: 50px;
+		}
+		&__item,
+		&__items {
+			list-style-type: none;
+			margin: 0px 0px;
+			padding: 0px 0px;
+		}
+		&__filtr {
+			float: right;
+			position: relative;
+			right: -40px;
+			font-size: 15px;
+			line-height: 1.1;
+			font-weight: 700;
+			color: @base-color;
+			margin-top: 12px;
+			&-item {
+				color: @base-color;
+				margin-left: 12px;
+				&:hover {
+					text-decoration: none;
+				}
+				span {
+					display: inline-block;
+				}
+				.decorate {
+					border-bottom: 1px dashed;
+				}
+				&.active,
+				&:hover {
+					color: @orange-color;
+					.decorate {
+						border-bottom-color: transparent;
+					}
+				}
+			}
+		}
+		&__item {
+			margin-top: 60px;
+			&:first-child {
+				margin-top: 0px;
+			}
+			&-data {
+				display: block;
+				line-height: 1.0;
+				padding: 9px 0px 0px;
+				margin-bottom: 12px;
+				font-size: 13px;
+				color: @gray-color;
+				font-family: 'houschka_roundedmedium';
+			}
+			&-frame {
+				display: block;
+				position: relative;
+				right: -40px;
+				border: 4px solid #d4dee7;
+				z-index: 1;
+			}
+			&-name {
+				font-family: 'houschka_roundedmedium';
+				font-size: 20px;
+				line-height: 1.5;
+				font-weight: 700;
+				color: @base-dark-color;
+				.decorate {
+					border-bottom: 1px solid #949b9d;
+				}
+				&:hover {
+					text-decoration: none;
+					.decorate {
+						border-bottom-color: transparent;
+					}
+				}
+			}
+		}
+	}
 }
