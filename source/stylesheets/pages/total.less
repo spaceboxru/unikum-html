@@ -69,12 +69,21 @@ a:active:focus,button:active:focus {
 	.decorate {
 		border-bottom: 1px solid #a1a1a1;
 		display: inline-block;
+		vertical-align: middle;
 		line-height: 1.0;
 	}
 	&:hover {
 		.decorate {
-			border-bottom: 0px none;
+			border-bottom-color: transparent;
+			color: @orange-color;
 		}
+		.icons--readmore:after {
+			.sprite(@readmore-hover);
+		}
+	}
+	.icons {
+		vertical-align: middle;
+		margin-left: 6px;
 	}
 }
 .shadow-line {
