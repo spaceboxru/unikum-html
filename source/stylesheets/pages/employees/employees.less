@@ -13,7 +13,7 @@
 		color: @base-dark-color;
 	}
 	&__anons {
-		margin-bottom: 20px;
+		margin-bottom: 37px;
 		&,
 		& p {
 			font-size: 20px;
@@ -22,18 +22,24 @@
 			color: @base-color;
 		}
 	}
+	br {
+		display: block;
+		line-height: 3.0rem;
+	}
 	&__item {
-		margin-bottom: 36px;
+		margin-bottom: 34px;
 		&--director {
 			background-color: #fdf8ea;
-			margin: 0px -100px 30px -60px;
+			margin: 0px -100px 32px -60px;
 			padding: 20px 100px 30px 60px;
 			.employees__item-name {
 				padding-top: 10px;
-				margin-bottom: 5px;
+				margin-bottom: 4px;
+				max-width: 100%;
+				line-height: 2.8rem;
 			}
 			.employees__item-post {
-				margin-bottom: 5px;
+				margin-bottom: 9px;
 			}
 			.employees__item-contacts {
 				line-height: 1.1;
@@ -47,15 +53,21 @@
 				}
 			}
 		}
+		&-post,
+		&-name {
+			max-width: 114px;
+		}
 		&-name {
 			font-size: 15px;
+			line-height: 1.70;
 			font-weight: 700;
 			display: block;
-			margin-bottom: 5px;
+			margin-bottom: 11px;
 		}
 		&-post {
 			display: block;
 			font-size: 13px;
+			line-height: 1.95;
 			font-style: italic;
 			color: @base-light-color;
 		}
@@ -67,11 +79,13 @@
 			position: relative;
 			width: 122px;
 			height: 122px;
-			margin-bottom: 12px;
+			margin-bottom: 10px;
 			img {
 				display: block;
 			}
 		}
-
+	}
+	&__line {
+		margin-right: -100px;
 	}
 }
