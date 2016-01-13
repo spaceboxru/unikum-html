@@ -123,3 +123,24 @@ a:active:focus,button:active:focus {
 .star {
 	color: @red-color;
 }
+ul {
+	padding-left: 18px;
+	font-size: 15px;
+	li {
+		list-style-type: none;
+		position: relative;
+		margin-top: 6px;
+		color: @base-light-color;
+		&:after {
+			content: "";
+			display: block;
+			position: absolute;
+			top: 1.0rem;
+			background: @base-light-color;
+			width: 4px;
+			height: 4px;
+			border-radius: 50%;
+			margin-left: -14px;
+		}
+	}
+}

@@ -1,5 +1,11 @@
 
 .topnav {
+	li {
+		&:before,
+		&:after {
+			background: transparent;
+		}
+	}
 	& &__item {
 		&:first-child {
 			width: 0.2%;
@@ -84,6 +90,12 @@
 .leftnav {
 	position: relative;
 	padding: 45px 0px;
+	li {
+		&:before,
+		&:after {
+			background: transparent;
+		}
+	}
 	&:before {
 		content: "";
 		display: block;
@@ -138,6 +150,12 @@
 }
 
 .btmnav {
+	li {
+		&:before,
+		&:after {
+			background: transparent;
+		}
+	}
 	& &__item {
 		font-size: 16px;
 		font-family: "Trebuchet MS", Helvetica, sans-serif;
