@@ -63,6 +63,23 @@
 		}
 	}
 	&-list {
+		&--inshadow {
+			margin-left: -60px;
+			margin-right: -100px;
+			padding-left: 60px;
+			padding-right: 100px;
+			position: relative;
+			&:before {
+				content: "";
+				display: block;
+				background-image: linear-gradient(rgba(0,0,0,0.03), rgba(0,0,0,0.0));
+				position: absolute;
+				top: 0px;
+				right: 0px;
+				left: 0px;
+				height: 60px;
+			}
+		}
 		&__title {
 			font-family: 'houschka_roundedextrabold';
 			font-size: 40px;
