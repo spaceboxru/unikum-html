@@ -1,0 +1,81 @@
+
+.health-article {
+	.clearfix();
+	.health-center();
+	font-size: 15px;
+	color: @base-light-color;
+	strong.about__readmore {
+		font-family: 'houschka_roundeddemibold';
+		color: @base-color;
+		font-size: 20px;
+		margin: 0px;
+	}
+	.unqslider {
+		.unqslider__titles,
+		.unqslider__images {
+			width: 540px;
+		}
+	}
+	&__prices {
+		background-color: #eaf8fd;
+		margin: 0px -110px 0px -60px;
+		padding: 20px 55px 30px 60px;
+		margin-bottom: 37px;
+		position: relative;
+		&:after {
+			content: "";
+			display: block;
+			width: 0px;
+			height: 0px;
+			border-width: 5px 5px;
+			border-style: solid;
+			border-color: #a9cad6 transparent transparent #a9cad6;
+			position: absolute;
+			right: 0px;
+			bottom: -10px;
+		}
+		&-value {
+			font-size: 30px;
+			font-family: 'houschka_roundedextrabold';
+			line-height: 1.1;
+			margin: 27px 0px 37px;
+			color: @base-color;
+			.rub {
+				font-weight: 700;
+			}
+		}
+	}
+	&__border {
+		padding: 16px 18px 17px;
+		position: relative;
+		p {
+			margin: 0px 0px;
+		}
+		&:after,
+		&:before {
+			content: "";
+			display: block;
+			position: absolute;
+			border: 2px dashed;
+			position: absolute;
+		}
+		&:before {
+			border-color: #fff;
+			top: 1px;
+			right: -1px;
+			bottom: -1px;
+			left: 1px;
+		}
+		&:after {
+			border-color: #a5bcd3;
+			top: 0px;
+			right: 0px;
+			bottom: 0px;
+			left: 0px;
+		}
+		.health-article__prices-value {
+			margin-bottom: 6px;
+			color: @base-color;
+		}
+	}
+}
