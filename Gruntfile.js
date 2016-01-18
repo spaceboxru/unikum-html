@@ -171,7 +171,8 @@ module.exports = function(grunt) {
 			build: {
 				files: {
 					'<%= dirs.output %>/javascripts/libs.min.js': [
-						'<%= dirs.input %>/javascripts/libs.js'
+						'<%= dirs.input %>/javascripts/libs.js',
+						'<%= dirs.input %>/javascripts/gallery.js'
 					],
 					'<%= dirs.output %>/javascripts/app.min.js': [
 						'<%= dirs.input %>/javascripts/app.js'

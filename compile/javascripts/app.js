@@ -172,4 +172,14 @@ jQuery(function($){
 		
 	}());
 	
+	// Activate Slider
+	$('.fscreen').fsizeGallery({
+		onPrevImage: function(index) {
+			// alert("prev image show");
+		},
+		onNextImage: function(index) {
+			// alert("next image show");
+		}
+	});
+	
 });
