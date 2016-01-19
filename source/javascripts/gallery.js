@@ -103,7 +103,16 @@ jQuery.fn.fsizeGallery = function( options ) {
 						'opacity': 0.0 
 					});
 			} else {
-				$thumbs.eq(idx).addClass(settings.activeClass);
+				$thumbs
+					.eq(idx)
+						.addClass(settings.activeClass);
+				$titles
+					.eq(idx)
+						.addClass(settings.activeClass)
+					.parent()
+						.css({
+							'height': $titles.eq(idx).outerHeight(true)
+						});
 			}
 			$thisA.css({
 				'background-image': 'url(' + thisHref + ')'
@@ -158,13 +167,31 @@ jQuery.fn.fsizeGallery = function( options ) {
 			}
 			$titles
 				.eq(prev)
+					.css({
+						'position': 'absolute'
+					})
 					.animate({
 						'opacity': 0.0 
-					}, settings.animationDuration)
+					}, settings.animationDuration, function() {
+						$(this).removeClass(settings.activeClass);
+					})
 				.end()
 				.eq(next)
+					.css({
+						'position': 'relative'
+					})
 					.animate({
 						'opacity': 1.0 
+					}, settings.animationDuration, function() {
+						$(this)
+							.addClass(settings.activeClass);
+					});
+			$titles
+				.eq(next)
+					.parent()
+					.delay(settings.animationDuration / 2)
+					.animate({
+						'height': $titles.eq(next).outerHeight(true)
 					}, settings.animationDuration);
 			$counterSlider
 				.html((next + 1) + '<i></i>' + slidesLen);
@@ -176,9 +203,17 @@ jQuery.fn.fsizeGallery = function( options ) {
 			$thumbs.removeClass(settings.activeClass);
 			$target.addClass(settings.activeClass);
 			if(next > prev) {
-				animateImage(1);
+				if(next == (slidesLen - 1) && prev == 0) {
+					animateImage(0);
+				} else {
+					animateImage(1);
+				}
 			} else if(next != prev) {
-				animateImage(0);
+				if(next == 0 && prev == (slidesLen - 1)) {
+					animateImage(1);
+				} else {
+					animateImage(0);
+				}
 			}
 			if((slidesLen - maxElementViews) > 0) {
 				var delta = ($win.width() < 1024) ? Math.floor($thumbsPaneH / Math.abs($thumbsPane.offset().left - $thumbs.eq(next).offset().left)) : Math.floor($thumbsPaneH / Math.abs($thumbsPane.offset().top - $thumbs.eq(next).offset().top)),
