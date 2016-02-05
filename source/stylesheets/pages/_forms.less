@@ -1,1 +1,77 @@
 
+input[type = "text"]:extend(.contacts__form-input) {
+	/*
+	display: inline-block;
+	width: auto;
+	margin: 0px;
+	*/
+}
+textarea,
+.inputtext {
+	.contacts__form-input;
+}
+input[type = "reset"],
+input[type = "submit"] {
+	.contacts__form-btn;
+}
+.data-table {
+	font-family: 'houschka_roundedextrabold';
+	font-size: 20px;
+	color: @base-color;
+	tr {
+		td {
+			padding-right: 20px;
+			&:last-child {
+				padding-right: 0px;
+			}
+		}
+	}
+	.form-required,
+	.starrequired {
+		position: absolute;
+	}
+	textarea,
+	.inputtext {
+		width: 100%;
+		margin: 0px 0px 20px;
+		padding-bottom: 8px;
+		padding-top: 0px; 
+		line-height: 1.42;
+	}
+	textarea {
+		height: 150px;
+	}
+}
+
+table.form-filter-table,
+table.form-table {
+	width: 100%;
+	tr,td {
+		border-left: 0px none;
+		border-right: 0px none;
+		vertical-align: middle;
+	}
+	tfoot {
+		&,
+		th,
+		tr,
+		td {
+			background-image: none;
+			border-bottom: 0px none;
+			border-left: 0px none;
+			border-right: 0px none;
+			text-align: center;
+		}
+	}
+	textarea {
+		height: 150px;
+	}
+	.inputtext {
+		margin: 10px 0px 10px;
+	}
+	#find_date_create_1,
+	#find_date_create_2 {
+		width: 40%;
+		margin: 10px 0px 10px;
+	}
+}
