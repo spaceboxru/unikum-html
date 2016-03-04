@@ -11,9 +11,10 @@
 		}
 	}
 	& &__item {
+		padding-left: 10px;
+		padding-right: 10px;
 		&:first-child {
-			width: 0.2%;
-			max-width: 40px;
+			
 		}
 		&,
 		a {
@@ -22,23 +23,49 @@
 				background: transparent;
 			}
 		}
+		&:nth-child(2) {
+			a:extend(.orange-color) {}
+			a:hover {
+				background-color: @orange-color;
+			}
+		}
+		&:nth-child(3) {
+			a:extend(.marine-color) {};
+			a:hover {
+				background-color: @marine-color;
+			}
+		}
+		&:nth-child(4) {
+			a:extend(.green-color) {};
+			a:hover {
+				background-color: @green-color;
+			}
+		}
+		&:nth-child(5) {
+			a:extend(.yellow-color) {};
+			a:hover {
+				background-color: @yellow-color;
+			}
+		}
+		&:nth-child(6) {
+			a:extend(.violet-color) {};
+			a:hover {
+				background-color: @violet-color;
+			}
+		}
 		a {
-			padding: 0px;
-			font-size: 20px;
 			font-family: 'houschka_roundedmedium';
+			font-size: 20px;
 			font-weight: 700;
 			white-space: nowrap;
 			line-height: 1.1;
-			&.orange,
-			&.marine,
-			&.green {
-				font-family: 'houschka_roundedextrabold';
-			}
-			&:not(.green):not(.marine):not(.orange) {
-				color: @base-dark-color;
-				&:hover {
-					color: @base-light-color;
-				}
+			font-family: 'houschka_roundedextrabold';
+			color: @base-dark-color;
+			display: inline-block;
+			border-radius: 20px;
+			padding: 9px 20px;
+			&:hover {
+				color: white!important;
 			}
 			.decorate {
 				display: inline-block;
@@ -46,9 +73,16 @@
 				border-bottom: 1px solid;
 			}
 			&:hover {
+				background-color: @menu-active-color;
+				color: white!important;
 				.decorate {
 					border-bottom-color: transparent;
 				}
+			}
+		}
+		&:first-child {
+			a:hover {
+				background-color: transparent;
 			}
 		}
 		&.active {
@@ -56,7 +90,35 @@
 				.decorate {
 					border-bottom-color: transparent;
 				}
+				background-color: @menu-active-color;
+				color: white!important;
 			}
+			&:nth-child(2) {
+				a {
+					background-color: @orange-color;
+				}
+			}
+			&:nth-child(3) {
+				a {
+					background-color: @marine-color;
+				}
+			}
+			&:nth-child(4) {
+				a {
+					background-color: @green-color;
+				}
+			}
+			&:nth-child(5) {
+				a {
+					background-color: @yellow-color;
+				}
+			}
+			&:nth-child(6) {
+				a {
+					background-color: @violet-color;
+				}
+			}
+
 		}
 	}
 	& &__home {
