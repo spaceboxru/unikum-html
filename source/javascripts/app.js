@@ -104,66 +104,6 @@ jQuery(function($){
 	}());
 
 	/**
-	* Input 21-year old person
-	*/
-	(function(){
-
-		var $day = $('.js-day'),
-			$month = $('.js-month'),
-			$year = $('.js-year'),
-			$authorize = $('.js-authorize'),
-			$authorizebtn = $('.js-authorize-btn'),
-			$all = $day.add($month).add($year),
-			date = new Date(),
-			currday = date.getDay(),
-			currmonth = date.getMonth(),
-			curryear = date.getFullYear(),
-			allow = 0;
-
-		function getCookie(name) {
-			var matches = document.cookie.match(new RegExp(
-			"(?:^|; )" + name.replace(/([\.$?*|{}\(\)\[\]\\\/\+^])/g, '\\$1') + "=([^;]*)"
-			));
-			return matches ? decodeURIComponent(matches[1]) : undefined;
-		}
-		// Check Cookie
-		if(getCookie('drova_21_years') == 'y') {
-			$authorize.addClass('hidd');
-		} else {
-			$authorize.removeClass('hidd');
-		}
-		$all.on('change', function() {
-			var vals = [+$day.val(),+$month.val(),+$year.val()];
-			allow = 0;
-			if( vals[0] != '' && vals[1] != '' && vals[2] != '' ) {
-				if((curryear - vals[2]) > 21) {
-					allow = 1;
-				} else if((curryear - vals[2]) == 21) {
-					if((currmonth - vals[1]) > 0) {
-						allow = 1;
-					} else if((currmonth - vals[1]) == 0) {
-						if((currday - vals[0]) > 0) {
-							allow = 1;
-						}
-					}
-				}
-				if(allow) $authorize.addClass('allow');
-					else $authorize.removeClass('allow');
-			}
-
-		});
-		// SetUp Cookie
-		$authorizebtn.on('click', function(e) {
-			e.preventDefault();
-			if($authorize.hasClass('allow')) {
-				document.cookie = "drova_21_years=y";
-				$authorize.addClass('hidd');
-			}
-		});
-
-	}());
-	
-	/**
 	* Custom select
 	*/
 	(function(){

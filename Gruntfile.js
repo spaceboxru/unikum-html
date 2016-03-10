@@ -136,12 +136,14 @@ module.exports = function(grunt) {
 
 						,'bower_components/jquery-placeholder/jquery.placeholder.js'
 						
-						,'bower_components/bootstrap/dist/js/bootstrap.js'
+						,'<%= dirs.input %>/javascripts/vendor/bootstrap/dist/js/bootstrap.js'
 
 						//,'bower_components/bootstrap/js/tooltip.js'
 						//,'bower_components/bootstrap/js/modal.js'
-						,'bower_components/bootstrap/js/dropdown.js'
-						,'bower_components/bootstrap/js/collapse.js'
+						
+						//,'bower_components/bootstrap/js/dropdown.js'
+						//,'bower_components/bootstrap/js/collapse.js'
+						
 						,'<%= dirs.input %>/javascripts/vendor/superscrollorama/jquery.superscrollorama.js'
 						,'<%= dirs.input %>/javascripts/vendor/superscrollorama/greensock/TweenMax.min.js'
 						//,'bower_components/bootstrap/js/alert.js'
