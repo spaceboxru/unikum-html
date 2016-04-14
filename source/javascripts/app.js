@@ -60,4 +60,15 @@ jQuery(function($){
 		
 	}());
 	
+	/**
+	* Index Slider delay
+	*/
+	(function(){
+		
+		$('.carousel').carousel({
+			interval: 2500
+		});
+	
+	}());
+	
 });
